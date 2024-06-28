@@ -400,6 +400,7 @@ module azureOpenAi 'core/ai/cognitiveservices.bicep' = if (useAOAI) {
     sku: {
       name: openAiSkuName
     }
+    disableLocalAuth: false
     deployments: concat([
       
       {
